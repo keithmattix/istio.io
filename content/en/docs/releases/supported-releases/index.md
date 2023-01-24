@@ -15,6 +15,7 @@ on a minor release do not contain backward incompatible changes.
 
 - [Support policy](#support-policy)
 - [Naming scheme](#naming-scheme)
+- [Control Plane/Data Plane Skew](#control-planedata-plane-skew)
 - [Support status of Istio releases](#support-status-of-istio-releases)
 - [Supported releases without known Common Vulnerabilities and Exposures (CVEs)](#supported-releases-without-known-common-vulnerabilities-and-exposures-cves)
 
@@ -49,6 +50,10 @@ Our naming scheme is as follows:
 where `<minor>` is increased for each release, and `<patch>` counts the number of patches for the
 current `<minor>` release. A patch is usually a small change relative to the `<minor>` release.
 
+## Control Plane/Data Plane Skew
+
+Lorem Ipsum Dolor
+
 ## Support status of Istio releases
 
 | Version         | Currently Supported  | Release Date      | End of Life              | Supported Kubernetes Versions | Tested, but not supported          |
@@ -65,6 +70,8 @@ current `<minor>` release. A patch is usually a small change relative to the `<m
 | 1.8             | No                   | November 10, 2020 | May 12, 2021             | 1.16, 1.17, 1.18, 1.19        | 1.15                               |
 | 1.7             | No                   | August 21, 2020   | Feb 25, 2021             | 1.16, 1.17, 1.18              | 1.15                               |
 | 1.6 and earlier | No                   |                   |                          |                               |                                    |
+
+The intent of the project is to support the last 4 versions of Kubernetes with each Istio release; however, this may change on a per-version basis.
 
 {{< warning >}}
 [Kubernetes 1.22 removed some deprecated APIs](https://kubernetes.io/blog/2021/07/14/upcoming-changes-in-kubernetes-1-22/) and as a result versions of Istio prior to 1.10.0 will no longer work. If you are upgrading your Kubernetes version, make sure that your Istio version is still supported.
